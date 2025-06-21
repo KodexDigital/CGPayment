@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CG Empire Service Payment 🎉 successful</title>
+    <link rel="icon" href="assets/imgs/favicon.ico" type="image/x-icon" />
+  <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #f6f9fc, #e9eff5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+    }
+
+    .content {
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #333;
+    }
+
+    p {
+      font-size: 1.25rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body onload="launchConfetti()">
+
+  <div class="content">
+    <h1>🎉 Congratulations!</h1>
+    <p>You’ve successfully made your fitness payment!</p>
+  </div>
+
+  <!-- Confetti JS -->
+  <script src="assets/js/confetti.js"></script>
+  <script>
+    function launchConfetti() {
+      confetti({
+        particleCount: 400,
+        spread: 150,
+        origin: { y: 0.7 },
+        colors: ['#ff0', '#f00', '#0f0', '#00f', '#ff00ff', '#00ffff']
+      });
+    }
+  </script>
+
+</body>
+</html>
